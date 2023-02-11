@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projects\\.NET\\NotissimusTesting\\NotissimusTesting\\NotissimusTesting.csproj": {}
+    "C:\\Users\\Marve\\source\\repos\\NotissimusTesting\\NotissimusTesting\\NotissimusTesting.csproj": {}
   },
   "projects": {
-    "D:\\Projects\\.NET\\NotissimusTesting\\NotissimusTesting.DAL\\NotissimusTesting.DAL.csproj": {
+    "C:\\Users\\Marve\\source\\repos\\NotissimusTesting\\NotissimusTesting.DAL\\NotissimusTesting.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\.NET\\NotissimusTesting\\NotissimusTesting.DAL\\NotissimusTesting.DAL.csproj",
+        "projectUniqueName": "C:\\Users\\Marve\\source\\repos\\NotissimusTesting\\NotissimusTesting.DAL\\NotissimusTesting.DAL.csproj",
         "projectName": "NotissimusTesting.DAL",
-        "projectPath": "D:\\Projects\\.NET\\NotissimusTesting\\NotissimusTesting.DAL\\NotissimusTesting.DAL.csproj",
-        "packagesPath": "C:\\Users\\Lentilles\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\.NET\\NotissimusTesting\\NotissimusTesting.DAL\\obj\\",
+        "projectPath": "C:\\Users\\Marve\\source\\repos\\NotissimusTesting\\NotissimusTesting.DAL\\NotissimusTesting.DAL.csproj",
+        "packagesPath": "C:\\Users\\Marve\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Marve\\source\\repos\\NotissimusTesting\\NotissimusTesting.DAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "D:\\Program Files\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Lentilles\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Marve\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -66,24 +66,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Projects\\.NET\\NotissimusTesting\\NotissimusTesting\\NotissimusTesting.csproj": {
+    "C:\\Users\\Marve\\source\\repos\\NotissimusTesting\\NotissimusTesting\\NotissimusTesting.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\.NET\\NotissimusTesting\\NotissimusTesting\\NotissimusTesting.csproj",
+        "projectUniqueName": "C:\\Users\\Marve\\source\\repos\\NotissimusTesting\\NotissimusTesting\\NotissimusTesting.csproj",
         "projectName": "NotissimusTesting",
-        "projectPath": "D:\\Projects\\.NET\\NotissimusTesting\\NotissimusTesting\\NotissimusTesting.csproj",
-        "packagesPath": "C:\\Users\\Lentilles\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\.NET\\NotissimusTesting\\NotissimusTesting\\obj\\",
+        "projectPath": "C:\\Users\\Marve\\source\\repos\\NotissimusTesting\\NotissimusTesting\\NotissimusTesting.csproj",
+        "packagesPath": "C:\\Users\\Marve\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Marve\\source\\repos\\NotissimusTesting\\NotissimusTesting\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "D:\\Program Files\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Lentilles\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Marve\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -99,8 +99,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "D:\\Projects\\.NET\\NotissimusTesting\\NotissimusTesting.DAL\\NotissimusTesting.DAL.csproj": {
-                "projectPath": "D:\\Projects\\.NET\\NotissimusTesting\\NotissimusTesting.DAL\\NotissimusTesting.DAL.csproj"
+              "C:\\Users\\Marve\\source\\repos\\NotissimusTesting\\NotissimusTesting.DAL\\NotissimusTesting.DAL.csproj": {
+                "projectPath": "C:\\Users\\Marve\\source\\repos\\NotissimusTesting\\NotissimusTesting.DAL\\NotissimusTesting.DAL.csproj"
               }
             }
           }
@@ -139,7 +139,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
