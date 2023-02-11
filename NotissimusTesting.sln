@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotissimusTesting", "NotissimusTesting\NotissimusTesting.csproj", "{758F522C-A950-4347-BF01-4D3C6AF5E0C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotissimusTesting.DAL", "NotissimusTesting.DAL\NotissimusTesting.DAL.csproj", "{99BD4E05-4DA6-4C68-912D-6BABEAE7E22B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{758F522C-A950-4347-BF01-4D3C6AF5E0C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{758F522C-A950-4347-BF01-4D3C6AF5E0C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{758F522C-A950-4347-BF01-4D3C6AF5E0C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{758F522C-A950-4347-BF01-4D3C6AF5E0C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99BD4E05-4DA6-4C68-912D-6BABEAE7E22B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99BD4E05-4DA6-4C68-912D-6BABEAE7E22B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99BD4E05-4DA6-4C68-912D-6BABEAE7E22B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99BD4E05-4DA6-4C68-912D-6BABEAE7E22B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3D8F0356-FE3E-4606-9DFE-A286E8611E9A}
+	EndGlobalSection
+EndGlobal
