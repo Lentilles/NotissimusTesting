@@ -1,0 +1,12 @@
+D:\Projects\.NET\NotissimusTesting\NotissimusTesting.DAL\bin\Debug\net7.0\NotissimusTesting.DAL.deps.json
+D:\Projects\.NET\NotissimusTesting\NotissimusTesting.DAL\bin\Debug\net7.0\NotissimusTesting.DAL.dll
+D:\Projects\.NET\NotissimusTesting\NotissimusTesting.DAL\bin\Debug\net7.0\NotissimusTesting.DAL.pdb
+D:\Projects\.NET\NotissimusTesting\NotissimusTesting.DAL\obj\Debug\net7.0\NotissimusTesting.DAL.csproj.AssemblyReference.cache
+D:\Projects\.NET\NotissimusTesting\NotissimusTesting.DAL\obj\Debug\net7.0\NotissimusTesting.DAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\.NET\NotissimusTesting\NotissimusTesting.DAL\obj\Debug\net7.0\NotissimusTesting.DAL.AssemblyInfoInputs.cache
+D:\Projects\.NET\NotissimusTesting\NotissimusTesting.DAL\obj\Debug\net7.0\NotissimusTesting.DAL.AssemblyInfo.cs
+D:\Projects\.NET\NotissimusTesting\NotissimusTesting.DAL\obj\Debug\net7.0\NotissimusTesting.DAL.csproj.CoreCompileInputs.cache
+D:\Projects\.NET\NotissimusTesting\NotissimusTesting.DAL\obj\Debug\net7.0\NotissimusTesting.DAL.dll
+D:\Projects\.NET\NotissimusTesting\NotissimusTesting.DAL\obj\Debug\net7.0\refint\NotissimusTesting.DAL.dll
+D:\Projects\.NET\NotissimusTesting\NotissimusTesting.DAL\obj\Debug\net7.0\NotissimusTesting.DAL.pdb
+D:\Projects\.NET\NotissimusTesting\NotissimusTesting.DAL\obj\Debug\net7.0\ref\NotissimusTesting.DAL.dll

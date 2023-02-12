@@ -13,10 +13,8 @@ namespace NotissimusTesting.DAL.Models.Offers
     public class Offer
     {
         [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int Id { get; set; }
-        List<OfferElement> elements = new List<OfferElement>();
-
-
-
+        public List<OfferElement> Elements = new List<OfferElement>();
     }
 }

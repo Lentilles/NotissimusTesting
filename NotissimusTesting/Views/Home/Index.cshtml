@@ -1,9 +1,50 @@
-﻿@{
+﻿@using NotissimusTesting.DAL.Models.Offers;
+@model Offer
+
+@{
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div>
+    <span> Offer </span> <span class="text-muted">#@Model.Id</span>
+
+    <div class="border border-2 p-3">
+        <h2>@Model.Elements.Where(x=> x.ElementName == "title").First().Value</h2>
+        <div class="d-flex flex-row justify-content-between">
+            <span class="text-muted">@Model.Elements.Where(x=> x.ElementName == "artist").First().Value</span>
+            <span> Год выпуска: @Model.Elements.Where(x=>x.ElementName == "year").First().Value</span>
+            <span>Цена: @Model.Elements.Where(x=> x.ElementName == "price").First().Value @Model.Elements.Where(x=>x.ElementName == "currencyId").First().Value</span>
+        </div>
+        <hr />
+        <div class="d-flex flex-row">
+            <div class="border border-1 w-75 p-2">
+                <p class="text-muted lead"> Описание </p>
+                <p>@Model.Elements.Where(x=>x.ElementName == "description").First().Value</p>
+            </div>
+
+            <!--<img src="@Model.Elements.Where(x=>x.ElementName == "picture").First().Value" alt="Picture doesnt loaded" class="w-25">-->
+            <img src="https://dvqlxo2m2q99q.cloudfront.net/000_clients/67688/page/67688299SYlgm.png" class="w-25 h-100" /> <!-- Вставил свою картинку поскольку ссылка в вашем XML не доступна -->
+        </div>
+        <div class="d-flex flex-row justify-content-between p-2">
+            <div>
+                <p class="text-muted lead"> Тип носителя:  </p>
+                <p>@Model.Elements.Where(x=>x.ElementName == "media").First().Value</p>
+            </div>
+            <div>
+                <p class="text-muted lead"> Доставка: </p>
+                @if (Model.Elements.Where(x => x.ElementName == "delivery").First().Value == "true")
+                {
+                    <p>Да</p>
+                }
+                else
+                {
+                    <p>Нет</p>
+                }
+            </div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
 </div>
+
 

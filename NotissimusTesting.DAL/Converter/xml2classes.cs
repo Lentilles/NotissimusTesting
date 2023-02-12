@@ -1,43 +1,47 @@
 ﻿using NotissimusTesting.DAL.Models.Offers;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Xml;
+using System.Text;
 
 namespace NotissimusTesting.DAL.Converter
 {
     public class xml2classes
     {
-        private Dictionary<string, Type> XML2ClassType = new Dictionary<string, Type>()
+        public static List<Offer> ReadXml(string path)
         {
-            {"vendor.model", typeof(VendorModel)},
-            {"book", typeof(Book) },
-            {"audiobook", typeof(AudioBook) },
-            {"artist.title", typeof(ArtistTitle) },
-            {"tour", typeof(Tour) },
-            {"event-ticket", typeof(EventTicket) }
-        };
-
-        public List<Offer> ConvertToOffers()
-        {
+            List<Offer> result = new List<Offer>();
             XmlDocument xDoc = new XmlDocument();
-            xDoc.Load("../YML.xml");
 
-            foreach(XmlNode node in xDoc.DocumentElement.ChildNodes)
+            System.Text.Encoding.RegisterProvider(System.Text.CodePagesEncodingProvider.Instance);
+            var context = new XmlParserContext(null, null, null, XmlSpace.None);
+            context.Encoding = Encoding.GetEncoding(1252);
+            var settings = new XmlReaderSettings();
+            settings.DtdProcessing = DtdProcessing.Parse;
+
+            using(var reader = XmlReader.Create(path, settings, context))
             {
-                var XMLType = node.Attributes["type"].Value;
+                xDoc.Load(reader);
+            }
 
-                Type type;
-                if(!XML2ClassType.TryGetValue(XMLType, out type))
-                {
-                    throw new Exception($"{nameof(XML2ClassType)} Doesnt contain {XMLType} key");
+            var OfferNodes = xDoc.GetElementsByTagName("offer");
+
+            foreach(XmlNode node in OfferNodes)
+            {
+                int offerId;
+                if(int.TryParse(node.Attributes.GetNamedItem("id").Value, out offerId)){
+                    Offer offer = new Offer() { Id = offerId };
+                    foreach (XmlNode childNode in node)
+                    {
+                        offer.Elements.Add(new OfferElement()
+                        {
+                            Offer = offer,
+                            ElementName = childNode.Name,
+                            Value = childNode.InnerText,
+                        });
+                    }
+                    result.Add(offer);
                 }
             }
-            // Так а почему опер
-
-            return new List<Offer>();
+            return result;
         }
     }
 }

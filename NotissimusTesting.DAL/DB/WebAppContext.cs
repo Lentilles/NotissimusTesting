@@ -5,11 +5,16 @@ namespace NotissimusTesting.DAL.DB
 {
     public class WebAppContext : DbContext
     {
-        DbSet<Offer> offers { get; set; }
-        DbSet<ArtistTitle> artists { get; set; }
-        DbSet<AudioBook> books { get; set; }
-        DbSet<EventTicket> ticket { get; set; }
-        DbSet<Tour> tours { get; set; }
-        DbSet<VendorModel> vendorModels { get; set; }
+        public DbSet<Offer> offers { get; set; }
+        public DbSet<OfferElement> offerElements { get; set; }
+
+        public WebAppContext() 
+        {
+            Database.EnsureCreated();
+        }
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=NotissimusTesting;Trusted_Connection=True;MultipleActiveResultSets=true");
+        }
     }
 } 
